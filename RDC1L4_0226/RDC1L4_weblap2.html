@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+
+<head>
+<title>weblap2</title>
+
+<style>
+    #piros-szo {
+        color: red;
+    }
+    #vilagoskek-szo {
+        color: cyan;
+    }
+    #orange-szo {
+        color: rgb(233, 109, 115);
+    }
+    #kek-szo {
+        color: blue;
+    }
+
+    #zold-szo {
+        color: green;
+    }
+    #purple-szo {
+        color: rgb(226, 32, 102);
+    }
+    #kekes-szo {
+        color: rgb(112, 176, 164);
+    }
+    #family-szo {
+        text-align: justify;
+        color: rgb(112, 176, 184);
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+</style>
+</head>
+
+
+<body>
+<h1>Szövegformázás: FONT (betűtípus, betűméret és szín)</h1> 
+
+<p>Ebbe a részbe a weblap tartalma kerül!<br/><br/>
+    Ez egy újabb sor, amit az elő sor alá írunk.&emsp;&emsp;&emsp;Most írjuk be a forráskódba egy másik mondat.<br/><br/>
+    <B>Ezt a szöveget vastag betűkkel írom,<i>&nbsp;ezt pedig vastag és dőlt betűkkel,&nbsp;</i></B><u>majd készítek egy aláhúzást is, kézzel írjuk be.</u><br/><br/>
+    <strike>Ezt a szöveget teljesen aláhúzom, kézzel írom be a kódot!</strike><br/><br/>
+    Ebben a szövegben néhány szó <sub>lentebb</sub> (alsó indexbe), néhány szó pedig <sup>fentebb</sup> lesz (felső index) megjelenítve.<br/><br/>
+    Ez 1 m<sup>3</sup> víz<sub>(1)</sub><br/>
+</p>
+    (1)Ez pl. egy lábjegyzet.<br/><br/>
+
+    <div><font size="+2">Ebben a szövegben <span id="kek-szo">lesznek</span> nagyobb betük, </font><font size="-2">lesznek kisebb betük is, </font><font size="+2"  id="purple-szo">illetve lesznek <span>színes szövegrészek</span> is.</font></div>
+    <br/>
+    <div id="family-szo" > 123456789<br/>
+    ab EFghi<br/><br/>
+    123456789<br/>
+    ab EFghi<br/><br/></div>
+    <div><font size="+2">Ebben a szövegben <span id="kek-szo">lesznek</span> nagyobb betük, 
+    </font><font size="-2">lesznek kisebb betük is, </font><font size="+2"  id="orange-szo">illetve lesznek <span>színes szövegrészek</span> is.</font></div>
+    
+    <div id="family-szo" ><br/> 123456789<br/>
+    asd FGHjkl</div>
+</body>
+</html>
+
+
+
+
+
+
+
