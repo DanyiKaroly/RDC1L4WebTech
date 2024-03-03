@@ -4,15 +4,37 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Szabályos</title>
+        <title>Képek beillesztése és formázása</title>
+        <style>
+            #bda {
+
+                width: 480px;
+
+            }
+
+            #dimg {
+                border: 3px solid red;              
+                float: left;
+                width: 110px;
+                height: 65px;
+            }
+            #p{
+                width: 480px;
+                text-align: justify;
+
+            }
+        </style>
     </head>
 
     <body>
 
     <h1>Képek beillesztése és formázása</h1>
 
-    Ez egy szöveg, amit arra használunk, hogy a kép körül jelenjen majd meg. Ha sikerül, akkor a kép körül lesz folyatva a szöveggel 
-    (legalábbis a kép két oldala). Így már sokkal szebben be tudunk illeszteni képeket a weblapunkra!
+    <div id="p"><p><img src="kepek/gyümölcs.jpg" id="dimg">Ez egy szöveg, amit arra használunk, hogy a kép körül jelenjen majd meg. Ha sikerül, akkor a kép körül lesz folyatva a szöveggel 
+    (legalábbis a kép két oldala). Így már sokkal szebben be tudunk illeszteni képeket a weblapunkra! </p></div>
+    <div>
+        <img src="kepek/iit.jpg" id="bda">
+    </div>
 
     </body>
     
