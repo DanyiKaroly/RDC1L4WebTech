@@ -1,0 +1,43 @@
+.tablazat2, td
+{
+    word-wrap: break-word;
+} 
+
+.elso-100
+{
+    height: 100px;
+    width: 100px;
+}
+
+
+td
+{
+    height: 100px;
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    border: none;
+}
+
+#red-td
+{
+    background-color: rgb(255, 102, 102);
+}
+
+.tablazat2
+{
+    background-color: gray;
+}
+.masodik
+{
+    background-color: rgb(255, 255, 204);
+}
+.harmadik
+{
+    background-color: rgb(255, 255, 204);
+}
+
+
+
+

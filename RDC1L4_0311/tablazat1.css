@@ -1,0 +1,23 @@
+.tab, td
+{
+    border: 1px solid black;
+    word-wrap: break-word;
+} 
+
+.h100
+{
+    height: 100px;
+}
+
+.w100
+{
+    height: 210px;
+    width:100px;
+}
+
+td
+{
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
