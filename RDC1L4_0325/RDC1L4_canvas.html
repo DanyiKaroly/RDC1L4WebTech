@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+
+    <head>
+        <meta charset="utf-8">
+        <title>canvas</title>
+    </head>
+
+    <body>
+
+    <header>
+    </header>
+
+    <section>
+
+        <canvas id="DKCanvas" width="700" height="350" style="border:1px solid #000000;">
+        </canvas>
+        <img id="kep" src="iit.jpg" style="display:none">
+
+    
+    </section>
+
+    <footer id="lablec" class="lablec">
+        <b>források:</b>
+        <br><br>
+        <a href="http://www.w3schools.com/html/html5_canvas.asp" target="ujablak">http://www.w3schools.com/html/html5_canvas.asp</a>
+        <br><br>
+        <a href="http://www.w3schools.com/canvas/default.asp" target="ujablak">http://www.w3schools.com/canvas/default.asp</a>
+        <br><br>
+        <a href="http://www.w3schools.com/tags/ref_canvas.asp" target="ujablak">http://www.w3schools.com/tags/ref_canvas.asp</a>
+        <br><br>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/drawImage" target="ujablak">https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/drawImage</a>
+        <img id="iit" src="kepek/iit.jpg" alt="iit" width="100" height="100">
+
+    </footer>
+
+    <script>
+        window.onload=function()
+        {
+            var dk = document.getElementById("DKCanvas");
+            var dkx = dk.getContext("2d");
+
+            dkx.lineWidth = 5;
+            dkx.strokeStyle = "#0066ff";
+            dkx.strokeRect(80,180,200,120);
+
+
+
+            // Create gradient
+            var grd = dkx.createRadialGradient(175, 87, 10, 200, 100, 75);
+            
+            grd.addColorStop(0, "#ffcc00");
+            grd.addColorStop(0.3, "#6600ff");
+            grd.addColorStop(1.0, "#33ff33");
+
+            // Fill with gradient
+            dkx.fillStyle = grd;
+            dkx.fillRect(100, 60, 150, 75);
+
+
+
+
+            dkx.lineWidth=7;
+            dkx.strokeStyle="#6633ff";
+            dkx.beginPath();
+            dkx.arc(450, 150, 65, 0.3*Math.PI, 1.5 * Math.PI);
+            dkx.stroke();
+
+
+            dkx.fillStyle="#ffcc33";
+            dkx.fill();
+
+            dkx.lineWidth=2;
+            dkx.strokeStyle="#cc0066";
+            dkx.font = "40px Calibri";
+
+            dkx.textAlign="center";
+            dkx.fillStyle="#ff6600";
+            dkx.fillText("Mérnökinformatika 2024", 350, 40);    
+
+
+
+            document.getElementById("iit").onload = function() 
+            {
+                const dk = document.getElementById("myCanvas");
+                const dkx = dk.getContext("2d");
+                var img = document.getElementById("iit");
+                dkx.drawImage(img, 90, 130, 50, 60, 10, 10, 50, 60);
+            };
+        }
+
+
+    </script>
+
+
+
+    </body>
+
+    
+</html>
