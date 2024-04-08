@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+
+    <head>
+        <meta charset="utf-8">
+        <title>JSON Text konvertálása JavaScript objektummá!</title>
+    </head>
+
+    <body>
+        <p id="ember"></p>
+
+
+        <script>
+           const jsonText = `{
+    "nev": "John Doe",
+    "iranyitoszam": "12345",
+    "varos": "Budapest",
+    "egyetem": "ELTE"
+    }`;
+
+            var emberObjektum = JSON.parse(jsonText);
+
+            document.getElementById("ember").innerHTML = emberObjektum.nev +" "+ emberObjektum.iranyitoszam +" "+ emberObjektum.varos +" "+ emberObjektum.egyetem;
+
+
+        </script>
+        
+
+
+    </body>
+    
+</html>
