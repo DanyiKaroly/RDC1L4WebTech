@@ -22,27 +22,8 @@
 
     
     </section>
-
-    <footer id="lablec" class="lablec">
-        <b>források:</b>
-        <br><br>
-        <a href="http://www.w3schools.com/html/html5_canvas.asp" target="ujablak">http://www.w3schools.com/html/html5_canvas.asp</a>
-        <br><br>
-        <a href="http://www.w3schools.com/canvas/default.asp" target="ujablak">http://www.w3schools.com/canvas/default.asp</a>
-        <br><br>
-        <a href="http://www.w3schools.com/tags/ref_canvas.asp" target="ujablak">http://www.w3schools.com/tags/ref_canvas.asp</a>
-        <br><br>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/drawImage" target="ujablak">https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/drawImage</a>
-        <img id="iit" src="kepek/iit.jpg" alt="iit" width="0" height="0">
-
-    </footer>
-
     <script>
-
-
-        window.onload=function()
-        {
-            var dk = document.getElementById("DKCanvas");
+           var dk = document.getElementById("DKCanvas");
             var dkx = dk.getContext("2d");
 
             dkx.lineWidth = 5;
@@ -82,26 +63,25 @@
             dkx.textAlign="center";
             dkx.fillStyle="#ff6600";
             dkx.fillText("Mérnökinformatika 2024", 350, 40);    
-
-
-            var img = document.getElementById("iit");
-            dkx.drawImage(img,500,200,500,600,560,200,135,180);
-
-
-        }
-            document.getElementById("iit").onload = function() 
-            {
-                const dk = document.getElementById("myCanvas");
-                const dkx = dk.getContext("2d");
-                var img = document.getElementById("iit");
-                dkx.drawImage(img, 90, 130, 50, 60, 10, 10, 50, 60);
+            
+            var img = new Image();
+            img.src = 'kepek/iit.jpg';
+            img.onload = function() {
+                dkx.drawImage(img, 800, 500, 150, 150, 630, 280, 75, 75);
             };
-
-    </script>
-
-
-
-    </body>
-
+        </script>
+        <footer id="lablec" class="lablec">
+            <b>források:</b>
+            <br><br>
+            <a href="http://www.w3schools.com/html/html5_canvas.asp" target="ujablak">http://www.w3schools.com/html/html5_canvas.asp</a>
+            <br><br>
+            <a href="http://www.w3schools.com/canvas/default.asp" target="ujablak">http://www.w3schools.com/canvas/default.asp</a>
+            <br><br>
+            <a href="http://www.w3schools.com/tags/ref_canvas.asp" target="ujablak">http://www.w3schools.com/tags/ref_canvas.asp</a>
+            <br><br>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/drawImage" target="ujablak">https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/drawImage</a>
+            <img id="iit" src="kepek/iit.jpg" alt="iit" width="0" height="0">
     
+        </footer>
+</body>
 </html>
