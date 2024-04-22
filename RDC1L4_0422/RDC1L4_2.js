@@ -42,7 +42,6 @@ $("#eltuntet").click(function(){
 
 
 
-
     $("#szoveg").click(function()
     {
         alert('HTML kód...');
