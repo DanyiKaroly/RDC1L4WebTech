@@ -3,52 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GameDev Project</title>
+    <title>GameDev</title>
+    <link rel="icon" type="image/x-icon" href="SpaceSurvivorsIcon.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Custom styles */
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
 
-        main {
-            padding: 20px;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-
-        .card {
-            background-color: #333; /* Card background color */
-            border-radius: 15px; /* Card border radius */
-            overflow: hidden; /* Hide overflowing content */
-            transition: transform 0.3s ease; /* Smooth transition effect */
-        }
-
-        .card:hover {
-            transform: scale(1.05); /* Scale up the card on hover */
-        }
-
-        .card-img-top {
-            border-radius: 15px 15px 0 0; /* Rounded corners for the top of the image */
-        }
-
-        .card-text {
-            color: white; /* Set text color to white */
-        }
-
-        .hide {
-            display: none;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -56,7 +15,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">Főoldal</a></li>
-                <li><a href="games.html">Játék</a></li>
+                <li><a href="games.html">Játékok</a></li>
                 <li><a href="#">Rólunk</a></li>
                 <li><a href="contact.html">Kapcsolat</a></li>
             </ul>
@@ -65,7 +24,16 @@
 
     <main>
         <section id="about">
-            <h2 class="text-center mb-4">Games</h2>
+            <div class="card greencard card mx-auto style="max-width: 600px;>
+                <div class="card-body">
+                    <h2 class="card-title whitewords">Üdvözlünk a Gamedev Világában!</h2>
+                    <p class="card-text">Ismerd meg a játékipar izgalmas világát, és fedezd fel a legfrissebb trendeket, technológiákat és inspirációkat a gamedev területén. Weboldalunkon széleskörű tartalmakat találsz, legyen szó fejlesztői tippekről, művészeti irányelvekről vagy akár üzleti stratégiákról.</p>
+                    <p class="card-text">Böngészd át cikkeinket és interjúinkat, amelyek mind a kezdő, mind a tapasztalt fejlesztők számára értékes információkat kínálnak. Ismerd meg a legújabb eszközöket és platformokat, amelyek segítségével létrehozhatod álmaid játékát, és nézd át a játék típusokat, hogy inspirálódj a saját projektjeidhez.</p>
+                    <p class="card-text">Ezenkívül statisztikákat is találsz a különböző játékműfajokról, hogy segítsenek eligazodni az iparágban és kiválasztani a legmegfelelőbb stílust a projektjeidhez.</p>
+                </div>
+            </div>
+            <br>
+            
             <div class="row">
                 <div class="col-md-6">
                     <div class="card mb-4">
@@ -74,6 +42,7 @@
                             <h5 class="card-title card-text">Pixel Art Játék</h5>
                             <p class="card-text">Pixel art játékok olyan videojátékok, amelyekben a grafika pixelenként vagy kis blokkokban van ábrázolva, általában alacsony felbontásban. Ezek a játékok gyakran visszanyúlnak a régebbi videojáték időszakokhoz, amikor a korlátozott hardveres erőforrások miatt a pixelenkénti grafika volt a normális.</p>
                             <p class="card-text">Néhány jellemzőjük:</p>
+                            <article>
                             <ul class="card-text">
                                 <li>Retro stílus: A pixel art játékok általában egy régebbi, retro stílusra építenek, amely visszahozza az 8 vagy 16-bites videojátékok élményét.</li>
                                 <li>Egyszerűség: Bár a pixel art részletes lehet, a grafika egyszerűsége és minimalizmusa is nagy jellemzője. A karakterek és környezetek általában alapvető formákból és színekből állnak össze.</li>
@@ -81,7 +50,8 @@
                                 <li>Alacsony költség: A pixel art stílusú grafikák sokkal kevesebb erőforrást igényelnek, mint a modern, magas felbontású grafikák, ezáltal olcsóbban és gyorsabban fejleszthetők.</li>
                                 <li>Kreativitás: A pixel art játékokban a korlátozott grafikai lehetőségek ellenére a fejlesztőknek mégis széles körű kreativitást kell alkalmazniuk a karakterek, környezetek és animációk létrehozásához.</li>
                                 <li>Népszerűség: Bár a pixel art stílusú játékoknak nosztalgikus vonzerejük van, mégis nagyon népszerűek a mai napig, és sokféle platformon elérhetőek, beleértve a mobiltelefonokat, a számítógépeket és a konzolokat is.</li>
-                            </ul>                        
+                            </ul>  
+                        </article>                      
                         </div>
                     </div>
                 </div>
@@ -92,6 +62,7 @@
                             <h5 class="card-title card-text">2D Játék</h5>
                             <p class="card-text">A 2D-s játékok olyan videojátékok, amelyek kétdimenziós térben játszódnak, vagyis a játékmezőt csak két dimenzióban, általában függőlegesen és vízszintesen lehet mozgatni. Ezek a játékok általában oldalnézetből vagy felülnézetből jelenítik meg a játéktér elemeit és karaktereit.</p>
                             <p class="card-text">Néhány jellemzőjük:</p>
+                            <article>
                             <ul class="card-text">
                                 <li>Grafika és stílus: A 2D-s játékok általában rajzolt vagy animált grafikával rendelkeznek, és különböző stílusokban lehetnek megvalósítva, például rajzfilm, képregény vagy pixel art stílusban.</li>
                                 <li>Játékmenet és irányítás: A 2D-s játékokban a játékos általában egy képernyőn mozog, akár vízszintesen, akár függőlegesen. Az irányítás általában egyszerűbb, mivel csak két dimenzióban kell navigálni a karaktert.</li>
@@ -100,6 +71,7 @@
                                 <li>Fighting játékok: A 2D-s harcolós játékokban a játékosok általában oldalról nézetből irányítják a karaktereket, és küzdenek egymással speciális képességek és harci mozdulatok segítségével.</li>
                                 <li>Retro érzés: Sok 2D-s játék visszanyúl a videojátékok korábbi időszakához, és nosztalgikus élményt nyújt azoknak, akik szeretik az egyszerűbb grafikákat és játékmenetet.</li>
                             </ul>
+                        </article>                      
                         </div>
                     </div>
                 </div>
@@ -108,27 +80,29 @@
 
         <section id="video" class="mt-5">
             <h2 class="text-center mb-4">Játékbemutató:</h2>
+            
             <div class="embed-responsive embed-responsive-16by9">
+
                 <video id="gameVideo" controls class="embed-responsive-item">
                     <source src="StardewValleyTrailer.mp4" type="video/mp4">
                     A böngésző nem támogatja a videót.
                 </video>
             </div>
-            <div id="videoControls" class="text-center mt-3">
-                <button onclick="playPause()">Lejátszás/Szünet</button>
-                <button onclick="restartVideo()">Újrakezdés</button>
+            <div id="videoControls">
+                <button class="btn" onclick="playPause()">Lejátszás/Szünet</button>
+                <button class="btn" onclick="restartVideo()">Újrakezdés</button>
+                <button class="btn" onclick="playVideo('StardewValleyTrailer.mp4')">Stardew Valley trailer</button>
+                <button class="btn" onclick="playVideo('TerrariaTrailer.mp4')">Terraria trailer</button>
             </div>
         </section>
     </main>
-
-
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
         var videoElement = document.getElementById("gameVideo");
-
+        var videos = ["StardewValleyTrailer.mp4", "TerrariaTrailer.mp4"];
         function playPause() {
             if (videoElement.paused) {
                 videoElement.play();
@@ -141,8 +115,21 @@
             videoElement.currentTime = 0;
             videoElement.play();
         }
-    </script>
 
+        function playVideo(source) {
+            videoElement.src = source;
+            videoElement.play();
+        }
+
+        var currentVideoIndex = 0; // Index of the current video
+
+        videoElement.addEventListener('ended', function() {
+            // Play the next video
+            currentVideoIndex = (currentVideoIndex + 1) % videos.length;
+            videoElement.src = videos[currentVideoIndex];
+            videoElement.play();
+        });
+    </script>
 <footer>
     <p>&copy; 2024 Készítette: Danyi Károly RDC1L4</p>
 </footer>
