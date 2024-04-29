@@ -1,0 +1,36 @@
+{
+    "DK_orarend": {
+        "kurzus":  [
+            {
+            "kurzusnev": "Webtechnológia alapjai",
+            "idopont": {
+                "nap": "Kedd",
+                "tol": 14,
+                "ig": 16
+            },
+            "helyszin": "Inf. 103.",
+            "oktato": "Dr. Bednarik László",
+            "szak": "GÉIK, BI",
+
+            "cim":
+            {
+                "street": "Egyetemváros",
+                "city": "Miskolc",
+                "code": "3515"
+            },
+
+            "phone number":
+                [
+                    {
+                        "type": "Vezetékes:",
+                        "number": "0612 345-678"
+                    },
+                    {
+                        "type": "Mobil:",
+                        "number": "0620 918-9550"
+                    }
+                ]
+            }
+        ]
+    }
+}
