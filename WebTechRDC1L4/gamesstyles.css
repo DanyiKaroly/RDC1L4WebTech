@@ -1,0 +1,450 @@
+/* Alap stílusok */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #C7E5C7;
+}
+
+
+
+
+
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #336633;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.greencard
+{
+    width: 90%;
+    background-color: #336633;
+}
+
+.whitewords
+{
+    text-align: center;
+    color: white;
+}
+
+form {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #336633;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Custom styles */
+
+
+
+.card {
+    background-color: #285228; 
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale up the card on hover */
+}
+
+.card-img-top {
+    border-radius: 15px 15px 0 0; /* Rounded corners for the top of the image */
+}
+
+.card-text {
+    color: white; /* Set text color to white */
+}
+
+.hide {
+    display: none;
+}
+
+.btn {
+    background-color: #285228;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1); /* Scale up the button on hover */
+    cursor: pointer;
+}
+#videoControls {
+    text-align: center  ;
+    margin-top: 1rem; /* Opcionális: a gombok és a videó közötti tér megadása */
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #336633;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #336633;
+}
+
+th {
+    background-color: #336633;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Átmeneti hatás a színváltozáshoz */
+}
+
+nav ul li a:hover {
+    color: lightskyblue; /* Változtasd meg a színt az igényeidnek megfelelően */
+}
+
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+
+
+.wrap {
+display: flex;
+flex-wrap: nowrap;
+justify-content: space-between;
+width: 85vmin;
+height: 65vmin;
+margin: 2rem auto;
+border: 8px solid;
+border-image: linear-gradient(
+-50deg,
+green,
+#00b300,
+forestgreen,
+green,
+lightgreen,
+#00e600,
+green
+)
+1;
+transition: 0.3s ease-in-out;
+position: relative;
+overflow: hidden;
+}
+.overlay {
+position: relative;
+display: flex;
+width: 100%;
+height: 100%;
+padding: 1rem 0.75rem;
+background: #186218;
+transition: 0.4s ease-in-out;
+z-index: 1;
+}
+.overlay-content {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+width: 15vmin;
+height: 100%;
+padding: 0.5rem 0 0 0.5rem;
+border: 3px solid;
+border-image: linear-gradient(
+to bottom,
+#aea724 5%,
+forestgreen 35% 65%,
+#aea724 95%
+)
+0 0 0 100%;
+transition: 0.3s ease-in-out 0.2s;
+z-index: 1;
+}
+.image-content {
+position: absolute;
+top: 0;
+right: 0;
+width: 70vmin;
+height: 100%;
+background-image: url("Call-of-Duty.jpg");
+background-size: cover;
+transition: 0.3s ease-in-out;
+/* border: 1px solid green; */
+}
+.image-content2 {
+position: absolute;
+top: 0;
+right: 0;
+width: 70vmin;
+height: 100%;
+background-image: url("lord.jpg");
+background-size: cover;
+transition: 0.3s ease-in-out;
+/* border: 1px solid green; */
+}
+
+.inset {
+max-width: 50%;
+margin: 0.25em 1em 1em 0;
+border-radius: 0.25em;
+float: left;
+}
+
+.dots {
+position: absolute;
+bottom: 1rem;
+right: 2rem;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+width: 55px;
+height: 4vmin;
+transition: 0.3s ease-in-out 0.3s;
+}
+.dot {
+width: 14px;
+height: 14px;
+background: yellow;
+border: 1px solid indigo;
+border-radius: 50%;
+transition: 0.3s ease-in-out 0.3s;
+}
+
+.text {
+position: absolute;
+top: 0;
+right: 0;
+width: 60vmin;
+height: 100%;
+padding: 3vmin 4vmin;
+background: #fff;
+box-shadow: inset 1px 1px 15px 0 rgba(0 0 0 / 0.4);
+overflow-y: scroll;
+}
+
+.wrap:hover .overlay {
+transform: translateX(-60vmin);
+}
+.wrap:hover .image-content {
+width: 60vmin;
+}
+.wrap:hover .image-content2 {
+width: 55vmin;
+}
+.wrap:hover .overlay-content {
+border: none;
+transition-delay: 0.2s;
+transform: translateX(60vmin);
+}
+.wrap:hover .dots {
+transform: translateX(1rem);
+}
+.wrap:hover .dots .dot {
+background: white;
+}
+
+/* Animations and timing delays */
+.animate {
+animation-duration: 0.7s;
+animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+animation-fill-mode: backwards;
+}
+/* Pop In */
+.pop {
+animation-name: pop;
+}
+@keyframes pop {
+0% {
+opacity: 0;
+transform: scale(0.5, 0.5);
+}
+100% {
+opacity: 1;
+transform: scale(1, 1);
+}
+}
+
+/* Slide In */
+.slide {
+animation-name: slide;
+}
+@keyframes slide {
+0% {
+opacity: 0;
+transform: translate(4em, 0);
+}
+100% {
+opacity: 1;
+transform: translate(0, 0);
+}
+}
+
+/* Slide Left */
+.slide-left {
+animation-name: slide-left;
+}
+@keyframes slide-left {
+0% {
+opacity: 0;
+transform: translate(-20px, 0);
+}
+100% {
+opacity: 1;
+transform: translate(0, 0);
+}
+}
+
+
+
+
+.delay-1 {
+animation-delay: 0.3s;
+}
+.delay-2 {
+animation-delay: 0.6s;
+}
+.delay-3 {
+animation-delay: 0.9s;
+}
+.delay-4 {
+animation-delay: 1.2s;
+}
+.delay-5 {
+animation-delay: 1.5s;
+}
+.delay-6 {
+animation-delay: 1.8s;
+}
+.delay-7 {
+animation-delay: 2.1s;
+}
+.delay-8 {
+animation-delay: 2.4s;
+}
+.container {
+display: flex;
+flex-wrap: wrap;
+}
+
+.wrap {
+width: calc(50% - 20px); /* Adjust the width as needed */
+margin: 10px;
+}
+.white
+{
+color: white;
+}
+
+.image-content3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70vmin;
+    height: 100%;
+    background-image: url("lastofus.jpg");
+    background-size: cover;
+    transition: 0.3s ease-in-out;
+    /* border: 1px solid green; */
+    }
+
+.wrap:hover .image-content3 {
+    width: 65vmin;
+}
+.image-content4 {
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 70vmin;
+    height: 100%;
+    background-image: url("capuchino.jpg");
+    background-size:cover;
+    transition: 0.3s ease-in-out;
+    /* border: 1px solid green; */
+    }
+
+.wrap:hover .image-content4 {
+    width: 80vmin;
+}
+
+header {
+    background-color: #336633;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    height: 136px;
+}
+
+.myh1
+{
+    font-size: 40px;
+    font-weight: lighter;
+    padding: 2px;
+}
+
+.myul
+{
+    padding: 10px;
+}
