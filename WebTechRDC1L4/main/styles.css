@@ -85,12 +85,12 @@ header {
 }
 
 .btn:hover {
-    transform: scale(1.1); /* Scale up the button on hover */
+    transform: scale(1.1); 
     cursor: pointer;
 }
 #videoControls {
     text-align: center  ;
-    margin-top: 1rem; /* Opcionális: a gombok és a videó közötti tér megadása */
+    margin-top: 1rem;
 }
 table {
     width: 100%;

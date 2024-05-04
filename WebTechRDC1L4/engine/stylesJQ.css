@@ -1,0 +1,104 @@
+#box {
+    text-align: top;
+    font-size: 12pt;
+    position: relative;
+    width: 0%;
+    border-style: none;
+  }
+  
+
+  .card {
+    width: 0px;
+    height: 0px;
+    border-style: none;
+    display: inline-block;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.card .text {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.sidePanel {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #285228;
+    color: white;
+    padding: 20px;
+    transition: left 0.5s;
+    /* csak bal oldali csík */
+}
+
+.sidePanel.show {
+    left: 0;
+}
+
+#closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#closeBtn:hover {
+    color: lightgray;
+}
+
+.sidePanel p {
+    margin-top: 30px;
+}
+
+.sidePanel2 {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #285228;
+  color: white;
+  padding: 20px;
+  transition: right 0.5s;
+}
+
+.sidePanel2.show {
+  right: 0;
+}
+
+.right
+{
+position: absolute;
+  right: 0px;
+}
+.left
+{
+  left: 0px;
+}
+
+#centerpanel
+{
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%);}
