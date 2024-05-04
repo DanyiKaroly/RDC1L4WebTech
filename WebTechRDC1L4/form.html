@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="icon" type="image/x-icon" href="SpaceSurvivorsIcon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="formstyless.css">
+</head>
+<body>
+    <header>
+        <h1>GameDev</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="games.html">Játékok</a></li>
+                <li><a href="#">Rólunk</a></li>
+                <li><a href="form.html">Tipkérő</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 style="text-align: center; margin: 40px;">Tipp kérő</h1>
+    <div style="width: 600px; margin: auto; background-color: white;">
+        <form style="text-align: center;" onsubmit="return validateForm();">
+            <!-- Szöveges beviteli mező (egy soros) -->
+            <label for="gameTitle" id="gameTitleError"><strong>Játékcím:</strong></label>
+            <input type="text" id="gameTitle" name="gameTitle"><br><br>
+
+            <!-- Többsoros beviteli mező -->
+            <label for="gameDescription" id="gameDescriptionError">Játék leírása:</label>
+            <textarea id="gameDescription" name="gameDescription"></textarea><br><br>
+
+            <!-- Adatlista (játéktípusok) -->
+            <label for="gameType" id="gameTypeError">Játéktípus:</label>
+            <select id="gameType" name="gameType" onchange="changeColor(this)">
+                <option value="null">Válassz játéktípust!</option>
+                <option value="action">Akció</option>
+                <option value="adventure">Kaland</option>
+                <option value="strategy">Stratégia</option>
+                <option value="simulation">Szimuláció</option>
+                <option value="rpg">Szerepjáték</option>
+            </select><br><br>
+
+            <!-- Jelölőnégyzet (platformok) -->
+            <label for="platforms" id="platformError">Platformok:</label>
+            <label for="windows" style="display: inline-block; margin-left: 20px; margin-right: 20px;" id="win">Windows</label><input type="checkbox" id="windows" name="platform" value="Windows" style="display: inline-block;">
+            <br>
+            <label for="mac" style="display: inline-block; margin-left: 20px; margin-right: 55px;" id="mac">Mac</label><input type="checkbox" id="mac" name="platform" value="Mac" style="display: inline-block;">
+            <br>
+            <label for="linux" style="display: inline-block; margin-left: 20px; margin-right: 47px;" id="lin">Linux</label><input type="checkbox" id="linux" name="platform" value="Linux" style="display: inline-block;">
+            <br>
+            <br>
+
+            <!-- Rádiógombok (fejlesztő környezetek) -->
+            <label id="EngineError">Fejlesztő környezet:</label>
+            <label for="unity" style="display: inline-block; margin-left: 20px; margin-right: 85px;" id="uni">Unity</label><input type="radio" id="unity" name="radiobutton" value="Unity" style="display: inline-block;">
+            <br>
+
+            <label for="UnrealEngine" style="display: inline-block; margin-left: 20px; margin-right: 20px;" id="unr">Unreal Engine</label><input type="radio" id="UnrealEngine" name="radiobutton" value="Unreal Engine" style="display: inline-block;">
+            <br>
+
+            <label for="GodotEngine" style="display: inline-block; margin-left: 20px; margin-right: 24px;" id="god">Godot Engine</label><input type="radio" id="GodotEngine" name="radiobutton" value="Godot Engine" style="display: inline-block;">
+
+            <br>
+
+            <!-- Színválasztó -->
+            <label for="gameColor">Játék színe:</label>
+            <input type="color" id="gameColor" name="gameColor" onchange="changeColor(this)"><br><br>
+
+            <!-- Dátumválasztó (kiadási dátum) -->
+            <label for="releaseDate">Kiadás dátuma:</label>
+            <input type="date" id="releaseDate" name="releaseDate"><br><br>
+
+            <!-- Gombok -->
+            <input type="submit" value="Küldés" onclick="if (validateForm()) {resetColors(), colorBackground(),addToGameVersions(), handleSubmit(event) }">
+            <input type="reset" value="Visszaállítás" onclick="resetColors(), ResetcolorBackground()"><br><br>
+
+            <!-- Számozott lista (játék verziók) -->
+            <label for="gameVersions">Elküldött:</label><br>
+            <ol id="gameVersions">
+
+            </ol><br><br>
+
+            <!-- Hibaüzenetek -->
+            <p id="errorMessage" style="color: red;"></p>
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+                    var title = document.getElementById("gameTitle").value;
+                    var description = document.getElementById("gameDescription").value;
+                    var type = document.getElementById("gameType").value;
+                    var platforms = document.querySelectorAll('input[name="platform"]:checked');
+                    var asd = document.querySelectorAll('input[name="radiobutton"]:checked');
+                    var color = document.getElementById("gameColor").value;
+                    var releaseDate = document.getElementById("releaseDate").value;
+
+                    var isValid = true;
+
+                         if (title == "") {
+                              document.getElementById("gameTitle").style.border = "2px solid red";
+                              document.getElementById("gameTitleError").style.color = "red";
+                              isValid = false;
+                           } else {
+                               document.getElementById("gameTitleError").style.color = "green";
+                              document.getElementById("gameTitle").style.border = "2px solid green";
+                          }
+                      
+                         if (description == "") {
+                              document.getElementById("gameDescription").style.border = "2px solid red";
+                              document.getElementById("gameDescriptionError").style.color = "red";
+                               isValid = false;
+                           } 
+                           else {
+                               document.getElementById("gameDescriptionError").style.color = "green";
+                              document.getElementById("gameDescription").style.border = "2px solid green";
+                            }
+                      
+                           if (type == "" || type == "null") {
+                               document.getElementById("gameType").style.border = "2px solid red";
+                              document.getElementById("gameTypeError").style.color = "red";
+                             isValid = false;
+                          } else {
+                             document.getElementById("gameType").style.border = "2px solid green";
+                              document.getElementById("gameTypeError").style.color = "green";
+                          }
+
+    if (platforms.length == 0) {
+        document.getElementById("mac").style.color = "red";
+        document.getElementById("win").style.color = "red";
+        document.getElementById("lin").style.color = "red";
+        document.getElementById("platformError").style.color = "red";
+        isValid = false;
+    } else {
+        document.getElementById("platformError").style.color = "green";
+        document.getElementById("mac").style.color = "green";
+        document.getElementById("win").style.color = "green";
+        document.getElementById("lin").style.color = "green";
+    }
+
+    if (asd.length==0)  {
+        document.getElementById("EngineError").style.color = "red";
+        document.getElementById("uni").style.color = "red";
+        document.getElementById("unr").style.color = "red";
+        document.getElementById("god").style.color = "red";
+        isValid = false;
+    } else {
+        document.getElementById("EngineError").style.color = "green";
+        document.getElementById("uni").style.color = "green";
+        document.getElementById("unr").style.color = "green";
+        document.getElementById("god").style.color = "green";
+    }
+
+
+
+    if (releaseDate == "") {
+        document.getElementById("releaseDate").style.border = "2px solid red";
+        isValid = false;
+    }
+    else
+    {
+        document.getElementById("releaseDate").style.border = "2px solid green";
+    }
+
+    // Ha bármelyik mező nem megfelelő, visszatérés false-szal
+    if (!isValid) {
+        return false;
+    }
+
+    // Ha minden validációs lépés sikeres, visszatérés true-val
+    document.getElementById("errorMessage").innerText = "Sikeres küldés!";
+    document.getElementById("errorMessage").style.color = "green";
+    return true;
+}
+
+
+
+        function changeColor(input) {
+            input.style.backgroundColor = input.value;
+        }
+
+        function resetColors() {
+            document.getElementById("gameTitle").style.border = "";
+            document.getElementById("gameDescription").style.border = "";
+            document.getElementById("gameType").style.border = "";
+            var platformLabels = document.querySelectorAll('label');
+            for (var i = 0; i < platformLabels.length; i++) {
+                platformLabels[i].style.color = "";
+            }
+            var envInputs = document.querySelectorAll('input[name="radiobutton"]');
+            for (var i = 0; i < envInputs.length; i++) {
+                envInputs[i].style.backgroundColor = "";
+            }
+            document.getElementById("gameColor").style.backgroundColor = "";
+            document.getElementById("releaseDate").style.border = "";
+            document.getElementById("errorMessage").innerText = "";
+            document.getElementById("errorMessage").style.color = "";
+        }
+
+        function colorBackground()
+        {
+            document.body.style.backgroundColor = document.getElementById("gameColor").value;
+        }
+
+        function ResetcolorBackground()
+        {
+            document.body.style.backgroundColor = "#c7e5c7";
+
+        }
+
+        function addToGameVersions() {
+    var title = document.getElementById("gameTitle").value;
+    var description = document.getElementById("gameDescription").value;
+    var type = document.getElementById("gameType").value;
+    var platforms = document.querySelectorAll('input[name="platform"]:checked');
+    var environmentInputs = document.querySelectorAll('input[name="radiobutton"]:checked');
+    var color = document.getElementById("gameColor").value;
+    var releaseDate = document.getElementById("releaseDate").value;
+
+    var gameVersionsList = document.getElementById("gameVersions");
+
+    var newItem = document.createElement("li");
+    newItem.appendChild(document.createTextNode("Cím: " + title + ", Leírás: " + description + ", Típus: " + type + ", Platformok: "));
+    
+    var platformNames = [];
+    platforms.forEach(function(platform) {
+        platformNames.push(platform.value);
+    });
+    newItem.appendChild(document.createTextNode(platformNames.join(", ")));
+
+    newItem.appendChild(document.createTextNode(", Környezet: "));
+    
+    var environmentValues = [];
+    environmentInputs.forEach(function(environmentInput) {
+        environmentValues.push(environmentInput.value);
+    });
+    newItem.appendChild(document.createTextNode(environmentValues.join(", ")));
+
+    newItem.appendChild(document.createTextNode(", Szín: " + color + ", Kiadás dátuma: " + releaseDate));
+
+    gameVersionsList.appendChild(newItem);
+}
+
+
+    function handleSubmit(event) {
+    event.preventDefault();
+    
+}
+
+    </script>
+</body>
+</html>

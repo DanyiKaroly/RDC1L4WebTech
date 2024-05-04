@@ -1,0 +1,137 @@
+/* Alap stílusok */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #C7E5C7;
+}
+
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #336633;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.greencard
+{
+    width: 90%;
+    background-color: #336633;
+}
+
+.whitewords
+{
+    text-align: center;
+    color: white;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Custom styles */
+header {
+    background-color: #336633;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.card {
+    background-color: #285228; 
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale up the card on hover */
+}
+
+.card-img-top {
+    border-radius: 15px 15px 0 0; /* Rounded corners for the top of the image */
+}
+
+.card-text {
+    color: white; /* Set text color to white */
+}
+
+.hide {
+    display: none;
+}
+
+.btn {
+    background-color: #285228;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1); /* Scale up the button on hover */
+    cursor: pointer;
+}
+#videoControls {
+    text-align: center  ;
+    margin-top: 1rem; /* Opcionális: a gombok és a videó közötti tér megadása */
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #336633;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #336633;
+}
+
+th {
+    background-color: #336633;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Átmeneti hatás a színváltozáshoz */
+}
+
+nav ul li a:hover {
+    color: lightskyblue; /* Változtasd meg a színt az igényeidnek megfelelően */
+}
