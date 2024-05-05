@@ -7,6 +7,7 @@
     <title>Form</title>
     <link rel="icon" type="image/x-icon" href="SpaceSurvivorsIcon.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="formstyless.css">
 </head>
 
@@ -19,6 +20,7 @@
                 <li><a href="\types\games.html">Játékok</a></li>
                 <li><a href="\engine\engine.html">Fejlesztő környezetek</a></li>
                 <li><a href="\form\form.html">Tipp kérő</a></li>
+                <li><a href="\docs\doc.html">Dokumentum</a></li>
             </ul>
         </nav>
     </header>
@@ -198,14 +200,14 @@
 
             if (releaseDate == "") {
                 document.getElementById("releaseDate").style.border = "2px solid red";
-                document.getElementById("ReleaseDate1").style.color= "red";
+                document.getElementById("ReleaseDate1").style.color = "red";
                 var labelElement = document.getElementById("ReleaseDate1");
                 labelElement.innerHTML = "Hiba!";
                 isValid = false;
             }
             else {
                 document.getElementById("releaseDate").style.border = "2px solid green";
-                document.getElementById("ReleaseDate1").style.color= "green";
+                document.getElementById("ReleaseDate1").style.color = "green";
                 var labelElement = document.getElementById("ReleaseDate1");
                 labelElement.innerHTML = "Kiadás dátuma:";
             }
@@ -293,7 +295,36 @@
 
         }
 
+        // AJAX hívás a JSON fájl lekéréséhez és megjelenítéséhez
+        $.ajax({
+            url: 'json.json', // A JSON fájl elérési útja
+            dataType: 'json',
+            success: function (data) {
+                // Az adatok megjelenítése
+                var jatekokDiv = $('#jatekok');
+                $.each(data.jatekok, function (index, jatek) {
+                    var jatekHtml = `
+                    <div>
+                        <h2>${jatek.cim}</h2>
+                        <p><strong>Leírás:</strong> ${jatek.leiras}</p>
+                        <p><strong>Típus:</strong> ${jatek.tipus}</p>
+                        <p><strong>Platformok:</strong> ${jatek.platformok.join(', ')}</p>
+                        <p><strong>Környezet:</strong> ${jatek.kornyezet}</p>
+                        <p><strong>Szín:</strong> <span style="background-color: ${jatek.szin};">${jatek.szin}</span></p>
+                        <p><strong>Kiadás dátuma:</strong> ${jatek.kiadas_datuma}</p>
+                    </div>
+                `;
+                    jatekokDiv.append(jatekHtml);
+                });
+            },
+            error: function (xhr, status, error) {
+                console.error('Hiba történt a JSON fájl betöltése közben:', error);
+            }
+        });
+
     </script>
+    <div id="jatekok"></div>
+
 </body>
 
 </html>

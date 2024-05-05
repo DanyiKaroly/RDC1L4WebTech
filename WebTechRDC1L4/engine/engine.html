@@ -23,6 +23,7 @@
                 <li><a href="\types\games.html">Játékok</a></li>
                 <li><a href="\main\engine.html">Fejlesztő környezetek</a></li>
                 <li><a href="\form\form.html">Tipp kérő</a></li>
+                <li><a href="\docs\doc.html">Dokumentum</a></li>
             </ul>
         </nav>
     </header>
@@ -47,9 +48,7 @@
             color: white;
         }
     </style>
-    <aside id="centerpanel">
-        <div style="margin: auto; width: 100px;"><button class="button btn" id="oldalsav">Oldalsáv</button></div>
-    </aside>
+
     <aside id="sidePanel" class="sidePanel">
         <button class="button btn" id="unity1" style="margin-top: 160px;">Unity</button>
 
@@ -71,6 +70,10 @@
         <br>
         <button class="button btn" id="game2" style="margin-top: 50px;">Gamemaker Studio</button>
     </aside>
+    <aside id="centerpanel">
+        <div style="margin: auto; width: 100px; z-index: 2;"><button class="button btn" id="oldalsav">Oldalsáv</button>
+        </div>
+    </aside>
     <style>
         .image-container {
             overflow: hidden;
@@ -83,17 +86,22 @@
             object-fit: cover;
         }
     </style>
+
+    <br>
+    <br>
     <div class="card box left image-card " id="unidiv">
         <img src="Unity-logo.jpg" alt="Unity">
     </div>
     <div class="card box right text-center" id="unidiv2">
         <button class="button btn btn-primary" id="ub">Unity</button>
-        <div style="width: 250px; margin: auto;">
+        <div style="width: 280px; margin: auto; text-align: justify;">
             <p id="ut" class="white">Az "Unity" egy olyan integrált fejlesztői környezet (IDE) és egy játékfejlesztési
                 platform, amelyet elsősorban videójátékok és egyéb interaktív tartalmak létrehozására használnak.
-                Az "Unity" egy olyan integrált fejlesztői környezet (IDE) és egy játékfejlesztési platform, amelyet
-                elsősorban videójátékok és egyéb interaktív tartalmak létrehozására használnak. Néhány alapvető
-                jellemzője:</p>
+                A Unity az egyik legnépszerűbb és legelterjedtebb játékfejlesztési platform és motor.
+                Könnyen használható, sokféle platformon futtatható (például iOS,
+                Android, PC, konzolok stb.), és nagy közösséggel rendelkezik.
+                A Unity lehetőséget ad 2D-s és 3D-s játékok fejlesztésére egyaránt, és számos kiegészítővel bővíthető.
+            </p>
         </div>
     </div>
 
@@ -103,10 +111,19 @@
     </div>
     <div class="card box right text-center" id="unrealdiv2">
         <button class="button btn btn-primary" id="unb">UnreaL Engine</button>
-        <div style="width: 250px; margin: auto;">
+        <div style="width: 280px; margin: auto; text-align: justify;">
 
-        <p id="unt" class="white">Unity egy játékfejlesztő platform.</p>
-    </div>
+            <p id="unt" class="white">
+                Az Unreal Engine-et az Epic Games fejleszti, és az egyik legismertebb motor a professzionális szintű
+                játékfejlesztés terén. Ez az engine erőteljes grafikus képességeket kínál, és kiváló minőségű, nagyon
+                részletes játékok létrehozására alkalmas.
+                Az Unreal Engine ingyenesen használható, de a kereskedelmi projektek esetén a bevétel egy részét meg
+                kell osztani az Epic Games-szel. Az Unreal sok előre elkészített eszközt és renderelési technikát
+                tartalmaz, amelyek segítségével gyönyörű és látványos játékokat hozhatsz létre.
+                Az Unreal Engine erőteljes grafikus motorja mellett a játékmenet, az AI, a hang és más területek
+                fejlesztésére is nagy hangsúlyt fektet.
+            </p>
+        </div>
 
     </div>
 
@@ -115,8 +132,20 @@
         <img src="godot-logo.png" alt="Godot Engine">
     </div>
     <div class="card box right text-center" id="godotdiv2">
-        <button class="button btn btn-primary" id="godb">UnreaL Engine</button>
-        <p id="godt" class="white">Unity egy játékfejlesztő platform.</p>
+        <button class="button btn btn-primary" id="godb">Godot Engine</button>
+        <div style="width: 280px; margin: auto; text-align: justify;">
+
+            <p id="godt" class="white">
+                A Godot Engine egy nyílt forráskódú játékfejlesztési platform és motor, amely ingyenesen használható. Ez
+                az engine egyre népszerűbbé válik a fejlesztők körében, mivel könnyen hozzáférhető és rendkívül testre
+                szabható.
+                A Godot nagy hangsúlyt fektet a könnyű tanulhatóságra és a felhasználóbarát felhasználói felületre. Ez
+                egy nagyszerű választás lehet azoknak, akik kezdőként szeretnének belemerülni a játékfejlesztésbe, vagy
+                akik szeretnék teljes mértékben testreszabni a fejlesztési környezetüket.
+                Bár a Godot Engine még nem olyan elterjedt, mint az Unity vagy az Unreal Engine, de folyamatosan
+                fejlődik és egyre növekvő közösséggel rendelkezik.
+            </p>
+        </div>
     </div>
     <br>
 
@@ -124,15 +153,19 @@
         <img src="gamemakerlogo.png" alt="GameMaker Studio">
     </div>
     <div class="card box right text-center" id="gamediv2">
-        <button class="button btn btn-primary" id="gmb">UnreaL Engine</button>
-        <p id="gmt" class="white">Unity egy játékfejlesztő platform.</p>
+        <button class="button btn btn-primary" id="gmb">GameMaker Studio</button>
+        <div style="width: 280px; margin: auto; text-align: justify;">
+
+            <p id="gmt" class="white">
+                A GameMaker Studio egy könnyen tanulható és használható játékfejlesztési platform és motor, amely
+                különösen alkalmas 2D-s játékok fejlesztésére. Ez az engine lehetővé teszi a gyors prototípusok
+                készítését és a játékok gyors létrehozását.
+                A GameMaker Studio segítségével a fejlesztők viszonylag gyorsan hozhatnak létre játékokat különböző
+                platformokra, beleértve az asztali és mobil eszközöket is. Az engine könnyen bővíthető és
+                testreszabható, és tartalmaz sok előre elkészített eszközt és funkciót a játékfejlesztés támogatására.
+            </p>
+        </div>
     </div>
-
-
-
-
-
-
 </body>
 
 </html>

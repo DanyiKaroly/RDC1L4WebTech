@@ -1,0 +1,22 @@
+{
+    "jatekok": [
+      {
+        "cim": "Probajáték1",
+        "leiras": "Ez egy nagyszerű játék!",
+        "tipus": "Akció",
+        "platformok": ["Windows", "Mac"],
+        "kornyezet": "Unity",
+        "szin": "#ff0000",
+        "kiadas_datuma": "2024-05-05"
+      },
+      {
+        "cim": "Probajáték2",
+        "leiras": "Ez egy másik fantasztikus játék!",
+        "tipus": "Kaland",
+        "platformok": ["Windows", "Linux"],
+        "kornyezet": "Unreal Engine",
+        "szin": "#00ff00",
+        "kiadas_datuma": "2024-05-10"
+      }
+    ]
+  }

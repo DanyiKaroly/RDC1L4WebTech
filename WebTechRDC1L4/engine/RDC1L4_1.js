@@ -54,7 +54,7 @@ $(document).ready(function () {
 
     $("#unity2").click(function () {
         if (!isrOpen) {
-            $("#unidiv2").animate({ left:'800px', width: '400px', height:'500px', fontSize: '12pt' }, 1000);
+            $("#unidiv2").animate({ left:'700px', width: '400px', height:'500px', fontSize: '12pt' }, 1000);
             isrOpen = true;
         } else {
             $("#unidiv2").animate({ left: '100%', width: '-250px', height:'0px', fontSize: '12pt' }, 1000);
@@ -64,7 +64,7 @@ $(document).ready(function () {
 
     $("#unreal2").click(function () {
         if (!isrOpen2) {
-            $("#unrealdiv2").animate({ left: '800px', width: '400px', height:'500px', fontSize: '12pt'}, 1000);
+            $("#unrealdiv2").animate({ left: '700px', width: '400px', height:'500px', fontSize: '12pt'}, 1000);
             isrOpen2 = true;
         } else {
             $("#unrealdiv2").animate({ left: '100%', width: '-250px', height:'0px', fontSize: '12pt' }, 1000);
@@ -74,7 +74,7 @@ $(document).ready(function () {
 
     $("#godot2").click(function () {
         if (!isrOpen3) {
-            $("#godotdiv2").animate({ left: '800px', width: '400px', height:'500px', fontSize: '12pt' }, 1000);
+            $("#godotdiv2").animate({ left: '700px', width: '400px', height:'500px', fontSize: '12pt' }, 1000);
             isrOpen3 = true;
         } else {
             $("#godotdiv2").animate({ left: '100%', width: '-250px', height:'0px', fontSize: '12pt' }, 1000);
@@ -84,7 +84,7 @@ $(document).ready(function () {
 
     $("#game2").click(function () {
         if (!isrOpen4) {
-            $("#gamediv2").animate({ left: '800px', width: '400px', height:'500px', fontSize: '12pt'}, 1000);
+            $("#gamediv2").animate({ left: '700px', width: '400px', height:'500px', fontSize: '12pt'}, 1000);
             isrOpen4 = true;
         } else {
             $("#gamediv2").animate({ left: '100%', width: '-250px', height:'0px', fontSize: '12pt' }, 1000);
@@ -93,47 +93,6 @@ $(document).ready(function () {
     });
 
 
-
-
-    $("#eltuntet").click(function () {
-        $("#p1").hide(2000);
-        $("#p2").hide(2000, function () {
-
-        });
-
-    });
-
-    $("#osszecsukKinyit").click(function () {
-        $("#box").slideToggle();
-        $("#box").slideToggle();
-        $("div").animate({ left: '300px', width: '300px' }, 1000);
-
-    });
-
-    $("#resetAnimation").click(function () {
-        $("#box").stop();
-        $("#box").css({
-            left: '300px',
-            top: '100px',
-            width: '300px',
-            height: 'auto',
-            fontSize: '12pt',
-            opacity: '1'
-        });
-    });
-
-    $('.toggle-text-btn').click(function () {
-        var card = $(this).parent();
-        card.find('.text').toggle();
-    });
-
-    $("#elMeg").click(function () {
-        $("#p1").hide(2000);
-        $("#p2").hide(2000)
-        $("#p3").hide(2000, function () {
-            alert('Bekezdések elrejtése');
-        });
-    });
 
     var OldalisOpen = false;
 

@@ -91,6 +91,7 @@
 {
   right: 0px;
   left: 100%;
+  z-index: 1;
 }
 .left
 {
@@ -101,7 +102,9 @@
 {
   position: fixed;
   left: 50%;
-  transform: translate(-50%, -50%);}
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
 
 .white
 {
