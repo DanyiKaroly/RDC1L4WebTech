@@ -122,10 +122,9 @@
             videoElement.play();
         }
 
-        var currentVideoIndex = 0; // Index of the current video
+        var currentVideoIndex = 0;
 
         videoElement.addEventListener('ended', function() {
-            // Play the next video
             currentVideoIndex = (currentVideoIndex + 1) % videos.length;
             videoElement.src = videos[currentVideoIndex];
             videoElement.play();
