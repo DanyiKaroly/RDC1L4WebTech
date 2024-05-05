@@ -1,0 +1,14 @@
+{
+  "name": "rdc1l4webtech",
+  "version": "1.0.0",
+  "description": "beadando",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
