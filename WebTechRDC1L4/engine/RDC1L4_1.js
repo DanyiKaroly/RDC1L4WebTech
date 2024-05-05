@@ -54,40 +54,40 @@ $(document).ready(function () {
 
     $("#unity2").click(function () {
         if (!isrOpen) {
-            $("#unidiv2").animate({ right: '400px', width: '400px', height:'500px', fontSize: '12pt' }, 1000);
+            $("#unidiv2").animate({ left:'800px', width: '400px', height:'500px', fontSize: '12pt' }, 1000);
             isrOpen = true;
         } else {
-            $("#unidiv2").animate({ right: '-250px', width: '-250px', height:'0px', fontSize: '12pt' }, 1000);
+            $("#unidiv2").animate({ left: '100%', width: '-250px', height:'0px', fontSize: '12pt' }, 1000);
             isrOpen = false;
         }
     });
 
     $("#unreal2").click(function () {
         if (!isrOpen2) {
-            $("#unrealdiv2").animate({ right: '400px', width: '400px', height:'500px', fontSize: '12pt'}, 1000);
+            $("#unrealdiv2").animate({ left: '800px', width: '400px', height:'500px', fontSize: '12pt'}, 1000);
             isrOpen2 = true;
         } else {
-            $("#unrealdiv2").animate({ right: '-250px', width: '-250px', height:'0px', fontSize: '12pt' }, 1000);
+            $("#unrealdiv2").animate({ left: '100%', width: '-250px', height:'0px', fontSize: '12pt' }, 1000);
             isrOpen2 = false;
         }
     });
 
     $("#godot2").click(function () {
         if (!isrOpen3) {
-            $("#godotdiv2").animate({ right: '400px', width: '400px', height:'500px', fontSize: '12pt' }, 1000);
+            $("#godotdiv2").animate({ left: '800px', width: '400px', height:'500px', fontSize: '12pt' }, 1000);
             isrOpen3 = true;
         } else {
-            $("#godotdiv2").animate({ right: '-250px', width: '-250px', height:'0px', fontSize: '12pt' }, 1000);
+            $("#godotdiv2").animate({ left: '100%', width: '-250px', height:'0px', fontSize: '12pt' }, 1000);
             isrOpen3 = false;
         }
     });
 
     $("#game2").click(function () {
         if (!isrOpen4) {
-            $("#gamediv2").animate({ right: '400px', width: '400px', height:'500px', fontSize: '12pt'}, 1000);
+            $("#gamediv2").animate({ left: '800px', width: '400px', height:'500px', fontSize: '12pt'}, 1000);
             isrOpen4 = true;
         } else {
-            $("#gamediv2").animate({ right: '-250px', width: '-250px', height:'0px', fontSize: '12pt' }, 1000);
+            $("#gamediv2").animate({ left: '100%', width: '-250px', height:'0px', fontSize: '12pt' }, 1000);
             isrOpen4 = false;
         }
     });
@@ -148,4 +148,22 @@ $(document).ready(function () {
             OldalisOpen = false;
         }
     });
+
+        $("#ub").click(function(){
+          $("#ut").toggle(1000);
+        });
+
+        $("#unb").click(function(){
+            $("#unt").toggle(1000);
+          });
+          
+          $("#godb").click(function(){
+            $("#godt").toggle(1000);
+          });
+
+        $("#gmb").click(function(){
+            $("#gmt").toggle(1000);
+        });
+  
+
 });

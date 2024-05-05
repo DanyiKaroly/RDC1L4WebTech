@@ -48,17 +48,17 @@
         }
     </style>
     <aside id="centerpanel">
-    <div style="margin: auto; width: 100px;"><button class="button btn" id="oldalsav">Oldalsáv</button></div>
-</aside>
+        <div style="margin: auto; width: 100px;"><button class="button btn" id="oldalsav">Oldalsáv</button></div>
+    </aside>
     <aside id="sidePanel" class="sidePanel">
         <button class="button btn" id="unity1" style="margin-top: 160px;">Unity</button>
 
         <br>
         <button class="button btn" id="unreal1" style="margin-top: 50px;">Unreal Engine</button>
         <br>
-        <button class="button btn"  id="godot1" style="margin-top: 50px;">Godot Engine</button>
+        <button class="button btn" id="godot1" style="margin-top: 50px;">Godot Engine</button>
         <br>
-        <button class="button btn"  id="game1" style="margin-top: 50px;">Gamemaker Studio</button>
+        <button class="button btn" id="game1" style="margin-top: 50px;">Gamemaker Studio</button>
     </aside>
 
     <aside id="sidePanel2" class="sidePanel2">
@@ -67,54 +67,72 @@
         <br>
         <button class="button btn" id="unreal2" style="margin-top: 50px;">Unreal Engine</button>
         <br>
-        <button class="button btn"  id="godot2" style="margin-top: 50px;">Godot Engine</button>
+        <button class="button btn" id="godot2" style="margin-top: 50px;">Godot Engine</button>
         <br>
-        <button class="button btn"  id="game2" style="margin-top: 50px;">Gamemaker Studio</button>
+        <button class="button btn" id="game2" style="margin-top: 50px;">Gamemaker Studio</button>
     </aside>
+    <style>
+        .image-container {
+            overflow: hidden;
+            /* ez arra szolgál, hogy ha a kép mérete nagyobb, mint a tartó konténeré, akkor ne lógjon ki belőle */
+        }
 
-    <div class="card box left" id="unidiv">
-        <img src="unity.jpg" alt="Unity">
-        <p class="text">Unity egy játékfejlesztő platform.</p>
+        .image-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+    <div class="card box left image-card " id="unidiv">
+        <img src="Unity-logo.jpg" alt="Unity">
     </div>
-    <div class="card box right" id="unidiv2">
-        <img src="unity.jpg" alt="Unity">
-        <p class="text">Unity egy játékfejlesztő platform.</p>
+    <div class="card box right text-center" id="unidiv2">
+        <button class="button btn btn-primary" id="ub">Unity</button>
+        <div style="width: 250px; margin: auto;">
+            <p id="ut" class="white">Az "Unity" egy olyan integrált fejlesztői környezet (IDE) és egy játékfejlesztési
+                platform, amelyet elsősorban videójátékok és egyéb interaktív tartalmak létrehozására használnak.
+                Az "Unity" egy olyan integrált fejlesztői környezet (IDE) és egy játékfejlesztési platform, amelyet
+                elsősorban videójátékok és egyéb interaktív tartalmak létrehozására használnak. Néhány alapvető
+                jellemzője:</p>
+        </div>
     </div>
+
     <br>
     <div class="card box left" id="unrealdiv">
-        <img src="unreal.jpg" alt="Unreal Engine">
-        <p class="text">Az Unreal Engine egy teljes-ökoszisztémás fejlesztőkörnyezet.</p>
+        <img src="Unreal_Engine.png" alt="Unreal Engine">
     </div>
-    <div class="card box right" id="unrealdiv2" style="margin-left: 100%;">
-        <img src="unreal.jpg" alt="Unreal Engine">
-        <p class="text">Az Unreal Engine egy teljes-ökoszisztémás fejlesztőkörnyezet.</p>
+    <div class="card box right text-center" id="unrealdiv2">
+        <button class="button btn btn-primary" id="unb">UnreaL Engine</button>
+        <div style="width: 250px; margin: auto;">
+
+        <p id="unt" class="white">Unity egy játékfejlesztő platform.</p>
     </div>
+
+    </div>
+
     <br>
     <div class="card box left" id="godotdiv">
-        <img src="godot.jpg" alt="Godot Engine">
-        <p class="text">A Godot Engine egy nyílt forráskódú játékfejlesztő motor.</p>
+        <img src="godot-logo.png" alt="Godot Engine">
     </div>
-    <div class="card box right" id="godotdiv2">
-        <img src="godot.jpg" alt="Godot Engine">
-        <p class="text">A Godot Engine egy nyílt forráskódú játékfejlesztő motor.</p>
+    <div class="card box right text-center" id="godotdiv2">
+        <button class="button btn btn-primary" id="godb">UnreaL Engine</button>
+        <p id="godt" class="white">Unity egy játékfejlesztő platform.</p>
     </div>
     <br>
+
     <div class="card box left" id="gamediv">
-        <img src="gamemaker.jpg" alt="GameMaker Studio">
-        <p class="text">A GameMaker Studio egy könnyen használható játékfejlesztő eszköz.</p>
+        <img src="gamemakerlogo.png" alt="GameMaker Studio">
     </div>
-    <div class="card box right" id="gamediv2">
-        <img src="gamemaker.jpg" alt="GameMaker Studio">
-        <p class="text">A GameMaker Studio egy könnyen használható játékfejlesztő eszköz.</p>
+    <div class="card box right text-center" id="gamediv2">
+        <button class="button btn btn-primary" id="gmb">UnreaL Engine</button>
+        <p id="gmt" class="white">Unity egy játékfejlesztő platform.</p>
     </div>
 
-    <br>
 
 
 
-    <br>
 
-    
+
 </body>
 
 </html>
