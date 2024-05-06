@@ -306,13 +306,11 @@ transform: translateX(1rem);
 background: white;
 }
 
-/* Animations and timing delays */
 .animate {
 animation-duration: 0.7s;
 animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
 animation-fill-mode: backwards;
 }
-/* Pop In */
 .pop {
 animation-name: pop;
 }
@@ -327,7 +325,6 @@ transform: scale(1, 1);
 }
 }
 
-/* Slide In */
 .slide {
 animation-name: slide;
 }
@@ -342,7 +339,6 @@ transform: translate(0, 0);
 }
 }
 
-/* Slide Left */
 .slide-left {
 animation-name: slide-left;
 }
@@ -390,7 +386,7 @@ flex-wrap: wrap;
 }
 
 .wrap {
-width: calc(50% - 20px); /* Adjust the width as needed */
+width: calc(50% - 20px);
 margin: 10px;
 }
 .white
@@ -407,7 +403,6 @@ color: white;
     background-image: url("lastofus.jpg");
     background-size: cover;
     transition: 0.3s ease-in-out;
-    /* border: 1px solid green; */
     }
 
 .wrap:hover .image-content3 {
@@ -422,7 +417,6 @@ color: white;
     background-image: url("capuchino.jpg");
     background-size:cover;
     transition: 0.3s ease-in-out;
-    /* border: 1px solid green; */
     }
 
 .wrap:hover .image-content4 {
