@@ -1,9 +1,9 @@
 $(document).ready(function() {
-    $('#elt').click(function(){
-        $('#dobozok').remove();
+    $('#eltavolit').click(function(){
+        $('#doboz').remove();
     });
 
-    $('#ki').click(function() {
-        $('#dobozok').empty();
+    $('#kiurit').click(function() {
+        $('#doboz').empty();
     })
 })

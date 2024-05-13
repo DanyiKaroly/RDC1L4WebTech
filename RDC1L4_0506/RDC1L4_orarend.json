@@ -1,0 +1,177 @@
+{
+    "DK orarend": {
+        "kurzus": [
+            {
+                "kurzusnev" : "Webtechnológia alapjai",
+                "idopont": {
+                    "nap":"Hétfő",
+                    "tol": "9",
+                    "ig":"10"
+                },
+                "helyszin":"Inf. 103",
+                "oktato":"Dr. Agárdi Anita",
+                "szak":"MI"
+                },
+
+            {
+            "kurzusnev" : "Szoftver technológia gyakorlat",
+            "idopont" : {
+                "nap" : "Hétfő",
+                "tol": "10",
+                "ig" : "12"
+            },
+            "helyszin" : "Inf. 202",
+            "oktato": "Dr Tompa Tamás",
+            "szak" : "MI"
+            },
+            
+            {
+            "kurzusnev" : "Webtechnológia alapjai",
+            "idopont": {
+                "nap":"Hétfő",
+                "tol": "14",
+                "ig":"16"
+            },
+            "helyszin":"Inf. 103",
+            "oktato":"Dr Bednarik László",
+            "szak":"MI"
+            },
+
+            {
+            "kurzusnev":"Adatbázis rendszerek II",
+            "idopont": {
+                "nap":"Hétfő",
+                "tol": "16",
+                "ig":"18"
+            },
+            "helyszin":"Inf. 101",
+            "oktato":"Mészáros Gergő",
+            "szak":"MI"
+            },
+
+            {
+                "kurzusnev":"C# programozás",
+                "idopont": {
+                    "nap":"Kedd",
+                    "tol": "10",
+                    "ig":"12"
+                },
+                "helyszin":"Inf. 103",
+                "oktato":"Smid László",
+                "szak":"MI"
+            },
+
+            {
+                "kurzusnev":"Fizika",
+                "idopont": {
+                    "nap":"Kedd",
+                    "tol": "10",
+                    "ig":"12"
+                },
+                "helyszin":"A1. XXXII",
+                "oktato":"Prof. Dr. Paripás Béla",
+                "szak":"MI"
+            },
+
+            {
+                "kurzusnev":"Numerikus analízis",
+                "idopont": {
+                    "nap":"Kedd",
+                    "tol": "12",
+                    "ig":"14"
+                },
+                "helyszin":"A1. XXXII",
+                "oktato":"Földvári Attila",
+                "szak":"MI"
+            },
+
+            {
+                "kurzusnev":"Numerikus analízis",
+                "idopont": {
+                    "nap":"Kedd",
+                    "tol": "16",
+                    "ig":"18"
+                },
+                "helyszin":"A1. 204",
+                "oktato":"Dr. Vadon Viktória",
+                "szak":"MI"
+            },
+
+
+            {
+                "kurzusnev":"Szoftver technológia gyakorlat",
+                "idopont": {
+                    "nap":"Szerda",
+                    "tol": "8",
+                    "ig":"9"
+                },
+                "helyszin":"A1 301",
+                "oktato":"Dr Tompa Tamás",
+                "szak":"MI"
+            },
+
+            {
+                "kurzusnev":"Adatbázis rendszerek II",
+                "idopont": {
+                    "nap":"Szerda",
+                    "tol": "10",
+                    "ig":"12"
+                },
+                "helyszin":"A2. XXXVI",
+                "oktato":"Dr Kovács László",
+                "szak":"MI"
+            },
+
+            {
+                "kurzusnev":"Biztonság és védelem az informatikban",
+                "idopont": {
+                    "nap":"Szerda",
+                    "tol": "12",
+                    "ig":"14"
+                },
+                "helyszin":"A1. XXXII",
+                "oktato":"Wagner György",
+                "szak":"MI"
+            },
+
+            {
+                "kurzusnev":"C# programozás",
+                "idopont": {
+                    "nap":"Csütörtök",
+                    "tol": "10",
+                    "ig":"12"
+                },
+                "helyszin":"Inf. 101",
+                "oktato":"Smid László",
+                "szak":"MI"
+            },
+
+            {
+                "kurzusnev":"Biztonság és védelem az informatikában",
+                "idopont": {
+                    "nap":"Csütörtök",
+                    "tol": "12",
+                    "ig":"14"
+                },
+                "helyszin":"Inf. 103",
+                "oktato":"Wagner György",
+                "szak":"MI"
+            }
+        ]
+    },
+    "cim" :{
+        "street" : "Egyetemváros",
+        "city":"Miskolc",
+        "code":"1021"
+    },
+    "phone number": [
+        {
+            "type":"Vezetékes",
+            "number":"0321 232 323"
+        },
+        {
+            "type" : "Mobil",
+            "number": "032 124 324"
+        }
+    ]
+}

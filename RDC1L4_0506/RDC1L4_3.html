@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="jquery3.7.1.js"></script>
+    <script src="RDC1L4_3.js"></script>
     <style>
-        #dobozok{
+        #doboz{
             margin-top: 20px;
             width: 150px;
             height: 150px;
-            background-color: rgb(149, 149, 255);
+            background-color: rgb(122, 147, 218);
+            text-align: left;
+            text-decoration: double;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 12pt;
+            position: relative;
         }
 
         .form{
@@ -24,30 +31,29 @@
         .form button{
             margin-top: 20px;
         }
+
     </style>
 </head>
 <body>
     <header><h1>JQuery feladatok</h1></header>
-    <button id="elt">Doboz eltávolítása</button>
-    <button id="ki">A DIV elemek kiürítése</button>
+    <button id="eltavolit">Doboz eltávolítása</button>
+    <button id="kiurit">A DIV elemek kiürítése</button>
 
-    <div id="dobozok">
-        <b> THE - MI</b> <br>
-        <b>.....</b>
+    <div id="doboz"><b>THE – MI</b>
+        <p style="font-size: xx-large;"><b>.....</b></p>
     </div>
 
     <div class="form">
     <b>Név: </b><input type="text"><br>
     <b>E-mail: </b><input type="text"><br>
     <b>Jelszó: </b><input type="text"><br>
-
     <button>Jelentkezés</button>
     </div>
+    <br>
 
     <footer>
        <b>Forrás:</b> <a href="https://www.w3schools.com/js/js_jquery_dom.asp" target="_blank">https://www.w3schools.com/js/js_jquery_dom.asp</a>
     </footer>
 
-    <script src="RDC1L4_3.js"></script>
 </body>
 </html>
